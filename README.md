@@ -38,3 +38,43 @@ bun prisma generate
 
 - This project uses Bun as the JavaScript runtime.
 - The current branch is `main`.
+
+## Deploy to Vercel
+
+Go to [vercel.com/signup](https://vercel.com/signup)  
+Click **Continue with GitHub** → Authorize Vercel  
+Click **"Add New..."** → **Project**  
+
+You'll see your GitHub repos listed:
+
+```
+┌─────────────────────────────────────────────┐
+│  Import Git Repository                       │
+│                                              │
+│  🔍 WebGameIdentifyClientRequirement  [Import] │
+│                                              │
+└─────────────────────────────────────────────┘
+```
+
+Click **Import** on your repo  
+
+Configure deployment (default settings are perfect):
+
+```
+┌────────────────────────────────────────────────┐
+│  Configure Project                              │
+│                                                 │
+│  Project Name: WebGameIdentifyClientRequirement │
+│  Framework:    Next.js  (auto-detected ✅)      │
+│  Root Dir:     ./          (leave default ✅)   │
+│  Build Cmd:    next build  (leave default ✅)   │
+│  Output Dir:   .next       (leave default ✅)   │
+│                                                 │
+│  Environment Variables: None needed ✅          │
+│                                                 │
+│              [Deploy]  ← Click this!            │
+└────────────────────────────────────────────────┘
+```
+
+Click **Deploy** 🚀  
+Wait ~2 minutes while Vercel builds and deploys
